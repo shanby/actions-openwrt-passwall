@@ -10,7 +10,8 @@ name: Build OpenWrt
 
 on:
   release:
-    types: [published]
+    #types: [published]
+    - cron: 0 20 * * *
   push:
     branches:
       - master
